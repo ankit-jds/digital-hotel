@@ -1,0 +1,42 @@
+<!--! login page  -->
+<div id="body">
+
+    <div class="container" id="container">
+        <div class="heading">
+            <h2>Hotel Elite</h2>
+            <p>(Please fill the following data)</p>
+        </div>
+        <div class="details-box">
+            <form action="">
+                <label for="tableNumber">Table Number </label>
+                <input type="number" id="tableNumber" name="tableNumber" min="1" max="50" required />
+                <label for="name">Name </label>
+                <input type="text" id="name" name="name" required />
+                <label for="mobileNumber">Mobile Number </label>
+                <input type="number" id="mobileNumber" name="mobileNumber" required />
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" required />
+                <!-- <button>Submit</button> -->
+                <button class="submit-button" type="submit">Proceed</button>
+            </form>
+            <!-- <div class="button">
+          <button type="submit">Proceed</button>
+        </div> -->
+        </div>
+    </div>
+</div>
+
+<!--===================== script =================== -->
+
+<script>
+    VANTA.WAVES({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+    });
+</script>

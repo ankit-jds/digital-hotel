@@ -1,0 +1,27 @@
+ <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Price</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    {{#each data}}
+    <tr class="rows">
+      <th class="select" scope="row">{{@index}}</th>
+      <td class="name select">{{name}}</td>
+      <td class="type select">{{type}}</td>
+      <td class="price select">{{price}}</td>
+      <td> <button id='dish{{id}}' class="order">ORDER</button> </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<a href="/cart">
+  <button type="button" id="proceed" class="btn btn-success">PROCEED TO CART</button>
+</a>
+<script src="/customer.js"></script>

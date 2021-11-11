@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+
+<form action="/placeorder" method="post">
+    <div class="input-group flex-nowrap">
+        <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+    </div>
+    <div class="input-group flex-nowrap">
+        <input type="text" class="form-control" placeholder="Table-no" id="table_no" name="table_no">
+    </div>
+    <textarea id="order_list" name="order_list" cols="30" rows="10" hidden></textarea>
+    <button type="submit" class="btn btn-success">Place Order</button>
+</form>
+
+
+<script src="/cart.js"></script>
